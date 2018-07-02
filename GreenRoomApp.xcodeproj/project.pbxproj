@@ -1,0 +1,805 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		272F9A8220E1308800AB00C5 /* GRInfoLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F9A8120E1308800AB00C5 /* GRInfoLocationViewController.swift */; };
+		272F9A8420E1439000AB00C5 /* InfoLocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F9A8320E1439000AB00C5 /* InfoLocationTableViewCell.swift */; };
+		274983C320D948DF00D3C06B /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274983C220D948DF00D3C06B /* HomeCollectionViewCell.swift */; };
+		27644B5820DAFBAA000798DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27B2A7F820DAD4AA00234894 /* Assets.xcassets */; };
+		276DD9A820D016FF004DA8DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276DD9A720D016FF004DA8DC /* AppDelegate.swift */; };
+		276DD9AA20D016FF004DA8DC /* GRHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276DD9A920D016FF004DA8DC /* GRHomeViewController.swift */; };
+		276DD9AD20D016FF004DA8DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 276DD9AB20D016FF004DA8DC /* Main.storyboard */; };
+		276DD9B020D016FF004DA8DC /* GreenRoomApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 276DD9AE20D016FF004DA8DC /* GreenRoomApp.xcdatamodeld */; };
+		276DD9B520D01700004DA8DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 276DD9B320D01700004DA8DC /* LaunchScreen.storyboard */; };
+		276DD9C020D01700004DA8DC /* GreenRoomAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276DD9BF20D01700004DA8DC /* GreenRoomAppTests.swift */; };
+		276DD9CB20D01700004DA8DC /* GreenRoomAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276DD9CA20D01700004DA8DC /* GreenRoomAppUITests.swift */; };
+		2790633C20D3C933006D261E /* GRSharePostcardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2790633B20D3C933006D261E /* GRSharePostcardViewController.swift */; };
+		279E6AD720D2F1B4005DE3BD /* GRLineUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E6AD620D2F1B4005DE3BD /* GRLineUpViewController.swift */; };
+		279E6AD920D2F2DF005DE3BD /* LineUpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E6AD820D2F2DF005DE3BD /* LineUpTableViewCell.swift */; };
+		279E6ADB20D2FA74005DE3BD /* GRAboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E6ADA20D2FA74005DE3BD /* GRAboutUsViewController.swift */; };
+		279E6ADD20D2FBA3005DE3BD /* GRInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E6ADC20D2FBA3005DE3BD /* GRInfoViewController.swift */; };
+		279E6ADF20D2FC75005DE3BD /* GRContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E6ADE20D2FC75005DE3BD /* GRContactsViewController.swift */; };
+		279E6AE320D30146005DE3BD /* GRDetailArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E6AE220D30146005DE3BD /* GRDetailArtistViewController.swift */; };
+		27A6D92520EA8EC80027FE3C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A6D92320EA8EC80027FE3C /* Extensions.swift */; };
+		27A6D92620EA8EC80027FE3C /* ArtistDetailsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A6D92420EA8EC80027FE3C /* ArtistDetailsHelper.swift */; };
+		27B7339320D16B3E0083EE97 /* GRScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B7339220D16B3E0083EE97 /* GRScheduleViewController.swift */; };
+		27B7339520D16B5D0083EE97 /* GRPostCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B7339420D16B5D0083EE97 /* GRPostCardViewController.swift */; };
+		27B7339720D16B890083EE97 /* GRMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B7339620D16B890083EE97 /* GRMapViewController.swift */; };
+		27FD2FE820D29B3900066BB6 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FD2FE720D29B3900066BB6 /* ScheduleTableViewCell.swift */; };
+		27FD2FEA20D2AB3A00066BB6 /* ArtistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FD2FE920D2AB3A00066BB6 /* ArtistModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		276DD9BC20D01700004DA8DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 276DD99C20D016FF004DA8DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 276DD9A320D016FF004DA8DC;
+			remoteInfo = GreenRoomApp;
+		};
+		276DD9C720D01700004DA8DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 276DD99C20D016FF004DA8DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 276DD9A320D016FF004DA8DC;
+			remoteInfo = GreenRoomApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		272F9A8120E1308800AB00C5 /* GRInfoLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRInfoLocationViewController.swift; sourceTree = "<group>"; };
+		272F9A8320E1439000AB00C5 /* InfoLocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoLocationTableViewCell.swift; sourceTree = "<group>"; };
+		274983C220D948DF00D3C06B /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		276DD9A420D016FF004DA8DC /* GreenRoomApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenRoomApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		276DD9A720D016FF004DA8DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		276DD9A920D016FF004DA8DC /* GRHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRHomeViewController.swift; sourceTree = "<group>"; };
+		276DD9AC20D016FF004DA8DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		276DD9AF20D016FF004DA8DC /* GreenRoomApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GreenRoomApp.xcdatamodel; sourceTree = "<group>"; };
+		276DD9B420D01700004DA8DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		276DD9B620D01700004DA8DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		276DD9BB20D01700004DA8DC /* GreenRoomAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreenRoomAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		276DD9BF20D01700004DA8DC /* GreenRoomAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenRoomAppTests.swift; sourceTree = "<group>"; };
+		276DD9C120D01700004DA8DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		276DD9C620D01700004DA8DC /* GreenRoomAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreenRoomAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		276DD9CA20D01700004DA8DC /* GreenRoomAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenRoomAppUITests.swift; sourceTree = "<group>"; };
+		276DD9CC20D01700004DA8DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2790633B20D3C933006D261E /* GRSharePostcardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRSharePostcardViewController.swift; sourceTree = "<group>"; };
+		279E6AD620D2F1B4005DE3BD /* GRLineUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRLineUpViewController.swift; sourceTree = "<group>"; };
+		279E6AD820D2F2DF005DE3BD /* LineUpTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineUpTableViewCell.swift; sourceTree = "<group>"; };
+		279E6ADA20D2FA74005DE3BD /* GRAboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRAboutUsViewController.swift; sourceTree = "<group>"; };
+		279E6ADC20D2FBA3005DE3BD /* GRInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRInfoViewController.swift; sourceTree = "<group>"; };
+		279E6ADE20D2FC75005DE3BD /* GRContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRContactsViewController.swift; sourceTree = "<group>"; };
+		279E6AE220D30146005DE3BD /* GRDetailArtistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRDetailArtistViewController.swift; sourceTree = "<group>"; };
+		27A6D92320EA8EC80027FE3C /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = GreenRoomApp/Utils/Extensions.swift; sourceTree = SOURCE_ROOT; };
+		27A6D92420EA8EC80027FE3C /* ArtistDetailsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArtistDetailsHelper.swift; path = GreenRoomApp/Utils/ArtistDetailsHelper.swift; sourceTree = SOURCE_ROOT; };
+		27B2A7F820DAD4AA00234894 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27B7339220D16B3E0083EE97 /* GRScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRScheduleViewController.swift; sourceTree = "<group>"; };
+		27B7339420D16B5D0083EE97 /* GRPostCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRPostCardViewController.swift; sourceTree = "<group>"; };
+		27B7339620D16B890083EE97 /* GRMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRMapViewController.swift; sourceTree = "<group>"; };
+		27FD2FE720D29B3900066BB6 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		27FD2FE920D2AB3A00066BB6 /* ArtistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		276DD9A120D016FF004DA8DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		276DD9B820D01700004DA8DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		276DD9C320D01700004DA8DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		276DD99B20D016FF004DA8DC = {
+			isa = PBXGroup;
+			children = (
+				276DD9A620D016FF004DA8DC /* GreenRoomApp */,
+				276DD9BE20D01700004DA8DC /* GreenRoomAppTests */,
+				276DD9C920D01700004DA8DC /* GreenRoomAppUITests */,
+				276DD9A520D016FF004DA8DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		276DD9A520D016FF004DA8DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				276DD9A420D016FF004DA8DC /* GreenRoomApp.app */,
+				276DD9BB20D01700004DA8DC /* GreenRoomAppTests.xctest */,
+				276DD9C620D01700004DA8DC /* GreenRoomAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		276DD9A620D016FF004DA8DC /* GreenRoomApp */ = {
+			isa = PBXGroup;
+			children = (
+				276DD9A720D016FF004DA8DC /* AppDelegate.swift */,
+				276DD9DA20D017BB004DA8DC /* Classes */,
+				276DD9D820D0175A004DA8DC /* Controllers */,
+				276DD9AE20D016FF004DA8DC /* GreenRoomApp.xcdatamodeld */,
+				276DD9D920D01794004DA8DC /* Model */,
+				276DD9E120D018E4004DA8DC /* Resources */,
+				276DD9DC20D017ED004DA8DC /* Storyboard */,
+				27A6D92220EA8EA20027FE3C /* Utils */,
+				276DD9DB20D017C6004DA8DC /* Views */,
+			);
+			path = GreenRoomApp;
+			sourceTree = "<group>";
+		};
+		276DD9BE20D01700004DA8DC /* GreenRoomAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				276DD9BF20D01700004DA8DC /* GreenRoomAppTests.swift */,
+				276DD9C120D01700004DA8DC /* Info.plist */,
+			);
+			path = GreenRoomAppTests;
+			sourceTree = "<group>";
+		};
+		276DD9C920D01700004DA8DC /* GreenRoomAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				276DD9CA20D01700004DA8DC /* GreenRoomAppUITests.swift */,
+				276DD9CC20D01700004DA8DC /* Info.plist */,
+			);
+			path = GreenRoomAppUITests;
+			sourceTree = "<group>";
+		};
+		276DD9D820D0175A004DA8DC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				279E6AE020D300C0005DE3BD /* Home */,
+				279E6AD520D2F15A005DE3BD /* Schedule */,
+				279E6AE120D300E8005DE3BD /* PostCard */,
+				279E6AE420D30185005DE3BD /* Location */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		276DD9D920D01794004DA8DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				276DD9DE20D0184B004DA8DC /* ML */,
+				276DD9DF20D01851004DA8DC /* DL */,
+				276DD9E020D0186E004DA8DC /* BL */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		276DD9DA20D017BB004DA8DC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		276DD9DB20D017C6004DA8DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				276DD9DD20D01823004DA8DC /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		276DD9DC20D017ED004DA8DC /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				276DD9B320D01700004DA8DC /* LaunchScreen.storyboard */,
+				276DD9AB20D016FF004DA8DC /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		276DD9DD20D01823004DA8DC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				274983C220D948DF00D3C06B /* HomeCollectionViewCell.swift */,
+				27FD2FE720D29B3900066BB6 /* ScheduleTableViewCell.swift */,
+				279E6AD820D2F2DF005DE3BD /* LineUpTableViewCell.swift */,
+				272F9A8320E1439000AB00C5 /* InfoLocationTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		276DD9DE20D0184B004DA8DC /* ML */ = {
+			isa = PBXGroup;
+			children = (
+				27FD2FE920D2AB3A00066BB6 /* ArtistModel.swift */,
+			);
+			path = ML;
+			sourceTree = "<group>";
+		};
+		276DD9DF20D01851004DA8DC /* DL */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DL;
+			sourceTree = "<group>";
+		};
+		276DD9E020D0186E004DA8DC /* BL */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BL;
+			sourceTree = "<group>";
+		};
+		276DD9E120D018E4004DA8DC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				276DD9B620D01700004DA8DC /* Info.plist */,
+				276DD9E220D018ED004DA8DC /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		276DD9E220D018ED004DA8DC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				27B2A7F820DAD4AA00234894 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		279E6AD520D2F15A005DE3BD /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				27B7339220D16B3E0083EE97 /* GRScheduleViewController.swift */,
+				279E6AE220D30146005DE3BD /* GRDetailArtistViewController.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		279E6AE020D300C0005DE3BD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				276DD9A920D016FF004DA8DC /* GRHomeViewController.swift */,
+				279E6AD620D2F1B4005DE3BD /* GRLineUpViewController.swift */,
+				279E6ADA20D2FA74005DE3BD /* GRAboutUsViewController.swift */,
+				279E6ADC20D2FBA3005DE3BD /* GRInfoViewController.swift */,
+				279E6ADE20D2FC75005DE3BD /* GRContactsViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		279E6AE120D300E8005DE3BD /* PostCard */ = {
+			isa = PBXGroup;
+			children = (
+				27B7339420D16B5D0083EE97 /* GRPostCardViewController.swift */,
+				2790633B20D3C933006D261E /* GRSharePostcardViewController.swift */,
+			);
+			path = PostCard;
+			sourceTree = "<group>";
+		};
+		279E6AE420D30185005DE3BD /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				27B7339620D16B890083EE97 /* GRMapViewController.swift */,
+				272F9A8120E1308800AB00C5 /* GRInfoLocationViewController.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		27A6D92220EA8EA20027FE3C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				27A6D92420EA8EC80027FE3C /* ArtistDetailsHelper.swift */,
+				27A6D92320EA8EC80027FE3C /* Extensions.swift */,
+			);
+			name = Utils;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		276DD9A320D016FF004DA8DC /* GreenRoomApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 276DD9CF20D01700004DA8DC /* Build configuration list for PBXNativeTarget "GreenRoomApp" */;
+			buildPhases = (
+				276DD9A020D016FF004DA8DC /* Sources */,
+				276DD9A120D016FF004DA8DC /* Frameworks */,
+				276DD9A220D016FF004DA8DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GreenRoomApp;
+			productName = GreenRoomApp;
+			productReference = 276DD9A420D016FF004DA8DC /* GreenRoomApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		276DD9BA20D01700004DA8DC /* GreenRoomAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 276DD9D220D01700004DA8DC /* Build configuration list for PBXNativeTarget "GreenRoomAppTests" */;
+			buildPhases = (
+				276DD9B720D01700004DA8DC /* Sources */,
+				276DD9B820D01700004DA8DC /* Frameworks */,
+				276DD9B920D01700004DA8DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				276DD9BD20D01700004DA8DC /* PBXTargetDependency */,
+			);
+			name = GreenRoomAppTests;
+			productName = GreenRoomAppTests;
+			productReference = 276DD9BB20D01700004DA8DC /* GreenRoomAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		276DD9C520D01700004DA8DC /* GreenRoomAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 276DD9D520D01700004DA8DC /* Build configuration list for PBXNativeTarget "GreenRoomAppUITests" */;
+			buildPhases = (
+				276DD9C220D01700004DA8DC /* Sources */,
+				276DD9C320D01700004DA8DC /* Frameworks */,
+				276DD9C420D01700004DA8DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				276DD9C820D01700004DA8DC /* PBXTargetDependency */,
+			);
+			name = GreenRoomAppUITests;
+			productName = GreenRoomAppUITests;
+			productReference = 276DD9C620D01700004DA8DC /* GreenRoomAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		276DD99C20D016FF004DA8DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = CopyPaste89;
+				TargetAttributes = {
+					276DD9A320D016FF004DA8DC = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					276DD9BA20D01700004DA8DC = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 276DD9A320D016FF004DA8DC;
+					};
+					276DD9C520D01700004DA8DC = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 276DD9A320D016FF004DA8DC;
+					};
+				};
+			};
+			buildConfigurationList = 276DD99F20D016FF004DA8DC /* Build configuration list for PBXProject "GreenRoomApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 276DD99B20D016FF004DA8DC;
+			productRefGroup = 276DD9A520D016FF004DA8DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				276DD9A320D016FF004DA8DC /* GreenRoomApp */,
+				276DD9BA20D01700004DA8DC /* GreenRoomAppTests */,
+				276DD9C520D01700004DA8DC /* GreenRoomAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		276DD9A220D016FF004DA8DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				276DD9B520D01700004DA8DC /* LaunchScreen.storyboard in Resources */,
+				27644B5820DAFBAA000798DD /* Assets.xcassets in Resources */,
+				276DD9AD20D016FF004DA8DC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		276DD9B920D01700004DA8DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		276DD9C420D01700004DA8DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		276DD9A020D016FF004DA8DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				279E6ADF20D2FC75005DE3BD /* GRContactsViewController.swift in Sources */,
+				279E6ADB20D2FA74005DE3BD /* GRAboutUsViewController.swift in Sources */,
+				27B7339320D16B3E0083EE97 /* GRScheduleViewController.swift in Sources */,
+				272F9A8220E1308800AB00C5 /* GRInfoLocationViewController.swift in Sources */,
+				279E6AE320D30146005DE3BD /* GRDetailArtistViewController.swift in Sources */,
+				27A6D92620EA8EC80027FE3C /* ArtistDetailsHelper.swift in Sources */,
+				274983C320D948DF00D3C06B /* HomeCollectionViewCell.swift in Sources */,
+				279E6ADD20D2FBA3005DE3BD /* GRInfoViewController.swift in Sources */,
+				27A6D92520EA8EC80027FE3C /* Extensions.swift in Sources */,
+				27B7339720D16B890083EE97 /* GRMapViewController.swift in Sources */,
+				276DD9B020D016FF004DA8DC /* GreenRoomApp.xcdatamodeld in Sources */,
+				27B7339520D16B5D0083EE97 /* GRPostCardViewController.swift in Sources */,
+				2790633C20D3C933006D261E /* GRSharePostcardViewController.swift in Sources */,
+				27FD2FEA20D2AB3A00066BB6 /* ArtistModel.swift in Sources */,
+				276DD9AA20D016FF004DA8DC /* GRHomeViewController.swift in Sources */,
+				279E6AD920D2F2DF005DE3BD /* LineUpTableViewCell.swift in Sources */,
+				276DD9A820D016FF004DA8DC /* AppDelegate.swift in Sources */,
+				279E6AD720D2F1B4005DE3BD /* GRLineUpViewController.swift in Sources */,
+				27FD2FE820D29B3900066BB6 /* ScheduleTableViewCell.swift in Sources */,
+				272F9A8420E1439000AB00C5 /* InfoLocationTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		276DD9B720D01700004DA8DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				276DD9C020D01700004DA8DC /* GreenRoomAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		276DD9C220D01700004DA8DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				276DD9CB20D01700004DA8DC /* GreenRoomAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		276DD9BD20D01700004DA8DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 276DD9A320D016FF004DA8DC /* GreenRoomApp */;
+			targetProxy = 276DD9BC20D01700004DA8DC /* PBXContainerItemProxy */;
+		};
+		276DD9C820D01700004DA8DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 276DD9A320D016FF004DA8DC /* GreenRoomApp */;
+			targetProxy = 276DD9C720D01700004DA8DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		276DD9AB20D016FF004DA8DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				276DD9AC20D016FF004DA8DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		276DD9B320D01700004DA8DC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				276DD9B420D01700004DA8DC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		276DD9CD20D01700004DA8DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		276DD9CE20D01700004DA8DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		276DD9D020D01700004DA8DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4DDS45FZX3;
+				INFOPLIST_FILE = GreenRoomApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = copyPaste89.GreenRoomApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		276DD9D120D01700004DA8DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4DDS45FZX3;
+				INFOPLIST_FILE = GreenRoomApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = copyPaste89.GreenRoomApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		276DD9D320D01700004DA8DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4DDS45FZX3;
+				INFOPLIST_FILE = GreenRoomAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = copyPaste89.GreenRoomAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GreenRoomApp.app/GreenRoomApp";
+			};
+			name = Debug;
+		};
+		276DD9D420D01700004DA8DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4DDS45FZX3;
+				INFOPLIST_FILE = GreenRoomAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = copyPaste89.GreenRoomAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GreenRoomApp.app/GreenRoomApp";
+			};
+			name = Release;
+		};
+		276DD9D620D01700004DA8DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4DDS45FZX3;
+				INFOPLIST_FILE = GreenRoomAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = copyPaste89.GreenRoomAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GreenRoomApp;
+			};
+			name = Debug;
+		};
+		276DD9D720D01700004DA8DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4DDS45FZX3;
+				INFOPLIST_FILE = GreenRoomAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = copyPaste89.GreenRoomAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GreenRoomApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		276DD99F20D016FF004DA8DC /* Build configuration list for PBXProject "GreenRoomApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				276DD9CD20D01700004DA8DC /* Debug */,
+				276DD9CE20D01700004DA8DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		276DD9CF20D01700004DA8DC /* Build configuration list for PBXNativeTarget "GreenRoomApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				276DD9D020D01700004DA8DC /* Debug */,
+				276DD9D120D01700004DA8DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		276DD9D220D01700004DA8DC /* Build configuration list for PBXNativeTarget "GreenRoomAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				276DD9D320D01700004DA8DC /* Debug */,
+				276DD9D420D01700004DA8DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		276DD9D520D01700004DA8DC /* Build configuration list for PBXNativeTarget "GreenRoomAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				276DD9D620D01700004DA8DC /* Debug */,
+				276DD9D720D01700004DA8DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		276DD9AE20D016FF004DA8DC /* GreenRoomApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				276DD9AF20D016FF004DA8DC /* GreenRoomApp.xcdatamodel */,
+			);
+			currentVersion = 276DD9AF20D016FF004DA8DC /* GreenRoomApp.xcdatamodel */;
+			path = GreenRoomApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 276DD99C20D016FF004DA8DC /* Project object */;
+}
